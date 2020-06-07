@@ -1,6 +1,6 @@
 # Hi, welcome to the C version of Leap Year Check
 
-Source code: main.cpp
+Source code: main.c
 
 Build Files:
 
