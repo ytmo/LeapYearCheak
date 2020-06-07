@@ -14,7 +14,7 @@ using namespace std;                               //Using namespace as std
 
 int main()
 {
-    auto year;
+    auto year = 0;                                 //auto MUST have a init number
     cout<<"Please input a year, and I'll check is that a leap year!!!"<<endl;
     cin>>year;                                     //input the year we want to check
     if(year%4==0 && year%100!=0 || year%400==0)    //we learned from math that if a year remainder 4 equals 0 and that year remainder 100 don't equals 0 or the year remainder 400 equals 0, than the year must be a leap year
