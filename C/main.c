@@ -10,10 +10,9 @@
 #include <stdio.h>
 #include <math.h>
 //#include <stdlib.h>                                 //for using SYSTEM
-char VERSION = 'Beta v2.0.0-1-cmd ';
-
 int main(int argc, const char * argv[])
 {
+    char VERSION = 'Beta v2.0.0-1-cmd ';
     char buf[500];
     char chose;
     sprintf(buf, argv[1]);
