@@ -19,5 +19,6 @@ jobs:
           files: |
             LeapYearCheakMacC
             LeapYearCheakMacCpp
+          name: LeapYearCheak Release ${{ github.ref }}
       env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
