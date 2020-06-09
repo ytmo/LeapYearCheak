@@ -8,17 +8,26 @@ jobs:
     steps:
     - name: COM Cpp files
       run: |
-        curl -O  https://raw.githubusercontent.com/ytmo/LeapYearCheak/master/Cpp/main.cpp;g++ main.cpp -o LeapYearCheak.Cpp.exe
+        curl -O  https://raw.githubusercontent.com/ytmo/LeapYearCheak/cmd/Cpp/main.cpp;g++ main.cpp -o lyc1.exe
     - name: COM C files
       run: |
-        curl -O  https://raw.githubusercontent.com/ytmo/LeapYearCheak/master/C/main.c;gcc main.c -o LeapYearCheak.C.exe
+        curl -O  https://raw.githubusercontent.com/ytmo/LeapYearCheak/cmd/C/main.c;gcc main.c -o lyc2.exe
+    - name: Pre. Files
+      run: |
+        mkdir Windows
+        cd Windows
+        mkdir C
+        mkdir Cpp
+        cd ..
+        cp lyc1.exe ./Windows/Cpp/lyc.exe
+        cp lyc2.exe ./Windows/C/lyc.exe
+        tar -czf WindowsCMD.tar.gz Windows
     - name: Upload Release When Tag
       uses: softprops/action-gh-release@v1
       if: startsWith(github.ref, 'refs/tags/')
       with:
           files: |
-            LeapYearCheak.C.exe
-            LeapYearCheak.Cpp.exe
+            WindowsCMD.tar.gz
           name: LeapYearCheak Release ${{ github.ref }}
       env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
