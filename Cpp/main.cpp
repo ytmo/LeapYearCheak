@@ -40,7 +40,7 @@ int main(int argc, const char * argv[])
         }
         else if (year % 400 == 0)
         {
-            cout "true" << endl;
+            cout << "true" << endl;
         }
         else
         {
