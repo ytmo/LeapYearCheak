@@ -17,7 +17,11 @@ int main()
     auto year = 0;
     cout << "Please input a year, and I'll check is that a leap year!!!" << endl;
     cin >> year;                                   //input the year we want to check
-    if(year % 4 == 0 && year % 100 != 0 || year % 400 == 0)//we learned from math that if a year remainder 4 equals 0 and that year remainder 100 don't equals 0 or the year remainder 400 equals 0, than the year must be a leap year
+    if(year % 4 == 0 && year % 100 != 0)    //we learned from math that if a year remainder 4 equals 0 and that year remainder 100 don't equals 0 or the year remainder 400 equals 0, than the year must be a leap year
+    {
+        cout << year << " is a leap year!" << endl;
+    }
+    else if (year % 400 == 0)
     {
         cout << year << " is a leap year!" << endl;
     }
