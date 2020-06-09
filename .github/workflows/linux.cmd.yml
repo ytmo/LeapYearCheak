@@ -1,4 +1,4 @@
-name: Linux build 
+name: Linux For Command Line Build 
 on: [push,pull_request]
 
 jobs:
@@ -8,17 +8,26 @@ jobs:
     steps:
     - name: COM Cpp files
       run: |
-        wget https://raw.githubusercontent.com/ytmo/LeapYearCheak/master/Cpp/main.cpp;g++ main.cpp -o LeapYearCheakLinuxCpp
+        wget https://raw.githubusercontent.com/ytmo/LeapYearCheak/cmd/Cpp/main.cpp;g++ main.cpp -o lyc1
     - name: COM C files
       run: |
-        wget https://raw.githubusercontent.com/ytmo/LeapYearCheak/master/C/main.c;gcc main.c -o LeapYearCheakLinuxC
+        wget https://raw.githubusercontent.com/ytmo/LeapYearCheak/master/C/main.c;gcc main.c -o lyc2
+    - name: Pre. Files
+      run: |
+        mkdir Linux
+        cd Linux
+        mkdir C
+        mkdir Cpp
+        cd ..
+        cp lyc1 ./Linux/Cpp/lyc
+        cp lyc2 ./Linux/C/lyc
+        tar -czf LinuxCMD.tar.gz Linux 
     - name: Upload Release When Tag
       uses: softprops/action-gh-release@v1
       if: startsWith(github.ref, 'refs/tags/')
       with:
           files: |
-            LeapYearCheakLinuxC
-            LeapYearCheakLinuxCpp
+            LinuxCMD.tar.gz
           name: LeapYearCheak Release ${{ github.ref }}
           body: |
             ## THIS IS THE NEWEST VERSION OF LeapYearCheak!!!!!
