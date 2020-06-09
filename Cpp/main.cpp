@@ -12,7 +12,7 @@
 
 using namespace std;                               //Using namespace as std
 
-int main()
+int main(int argc, const char * argv[])
 {
     auto year = 0;
     cout << "Please input a year, and I'll check is that a leap year!!!" << endl;
