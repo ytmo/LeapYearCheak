@@ -10,7 +10,7 @@
 #include <stdio.h>
 //#include <stdlib.h>                                 //for using SYSTEM
 
-int main()
+int main(int argc, const char * argv[])
 {
     int year;
     printf("Please input a year, and I'll check is that a leap year!!!\n");
