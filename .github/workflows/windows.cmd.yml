@@ -1,4 +1,4 @@
-name: Windows build 
+name: Windows For Command Line Build 
 on: [push,pull_request]
 
 jobs:
