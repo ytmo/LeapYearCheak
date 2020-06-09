@@ -1,4 +1,4 @@
-# Hi, welcome to the C++ version of Leap Year Check
+# Hi, welcome to the C++ Command version of Leap Year Check
 
 Source code: main.cpp
 
