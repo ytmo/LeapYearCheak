@@ -18,19 +18,26 @@ using namespace std;                               //Using namespace as std
 int main(int argc, const char * argv[])
 {
     char buf[500];
-    string aaa;
+    string chose;
     sprintf(buf, argv[1]);
-    aaa = buf;
-    if (aaa == "-h" || aaa == "-help" || aaa == "--h" || aaa == "--help")
+    chose = buf;
+    if (chose == "-h" || chose == "-help" || chose == "--h" || chose == "--help")
     {
-        cout<<"Welcomde━(*｀∀´*)ノ亻!"<<endl<<"This LeapYearCheak(lyc) is write by Toms Project!!"<<endl<<"Thank to c++ STL lib for help to build this!!!Version: "<<endl<<VERSION<<endl<<"Useage："<<endl<<"lyc -h   See the help"<<endl<<"lyc -v   See the version"<<endl<<"lyc -c YEAR   Check if a year is or not a leap year"<<endl;
+        cout << "Welcomde━(*｀∀´*)ノ亻!"<<endl;
+        cout << "This LeapYearCheak(lyc) is write by Toms Project!!"<<endl;
+        cout << "Thank to c++ STL lib for help to build this!!!" << endl;
+        cout << "Version: "<<VERSION<<endl;
+        cout << "Useage："<<endl;
+        cout << "lyc -h   See the help"<<endl;
+        cout << "lyc -v   See the version"<<endl;
+        cout << "lyc -c YEAR   Check if a year is or not a leap year"<<endl;
         
     }
-    else if (aaa == "-v" || aaa == "-version" || aaa == "--v" || aaa == "--version")
+    else if (chose == "-v" || chose == "-version" || chose == "--v" || chose == "--version")
     {
-        cout<<"LeapYearCheak(lyc) Version: "<<endl<<VERSION<<endl;
+        cout << "LeapYearCheak(lyc) Version: "<<VERSION<<endl;
     }
-    else if (aaa == "-s" || aaa == "-suan" || aaa == "--s" || aaa == "--suan")
+    else if (chose == "-s" || chose == "-suan" || chose == "--s" || chose == "--suan")
     {
         sprintf(buf, argv[2]);
         auto year = atoll(buf);//input the year we want to check
@@ -49,8 +56,8 @@ int main(int argc, const char * argv[])
     }
     else
     {
-        cerr<<"Err!!!Please use -h to see how to use me right!!!"<<endl;
-    }                                
+        cerr << "Err!!!Please use -h to see how to use me right!!!" << endl;
+    }
     //system("pause");                              //to see result clearly
     return 0;
 }
