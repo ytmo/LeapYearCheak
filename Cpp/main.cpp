@@ -56,7 +56,7 @@ int main(int argc, const char * argv[])
     }
     else
     {
-        cerr << "Err!!!Please use -h to see how to use me right!!!" << endl;
+        cerr << "Err!!!Please use 'lyc -h' to see how to use me right!!!" << endl;
     }
     //system("pause");                              //to see result clearly
     return 0;
