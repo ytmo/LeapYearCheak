@@ -3,6 +3,7 @@
 
 ---
 If you want to use it in command line, please goto [CMD ver](https://github.com/ytmo/LeapYearCheak/tree/cmd)
+(C++ Version Build Succeesed, C Version Build Failed)
 ---
 
 ## C Version
