@@ -31,8 +31,8 @@ jobs:
           name: LeapYearCheak for CMD Release ${{ github.ref }}
           body: |
             ## THIS IS THE NEWEST VERSION OF LeapYearCheak for CMD!!!!!
-            For linux: LeapYearCheakLinuxC LeapYearCheakLinuxCpp
-            For windows: LeapYearCheak.C.exe LeapYearCheak.Cpp.exe
-            For macos: LeapYearCheakMacC LeapYearCheakMacCpp
+            For Linux: LinuxCMD.tar.gz
+            For Windows: WindowsCMD.tar.gz
+            For MacOS: Build Failed
       env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
