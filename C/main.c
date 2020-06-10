@@ -15,7 +15,7 @@ int main(int argc, const char * argv[])
     char VERSION = 'Beta v2.0.0-1-cmd ';
     char buf[500];
     char chose;
-    sprintf(buf, argv[1]);
+    sprintf(buf, "%s", argv[1]);
     chose = buf;
     if (chose == '-h' || chose == '-help' || chose == '--h' || chose == '--help')
     {
@@ -34,7 +34,7 @@ int main(int argc, const char * argv[])
     }
     else if (chose == '-s' || chose == '-suan' || chose == '--s' || chose == '--suan')
     {
-        sprintf(buf, argv[2]);
+        sprintf(buf, "%s", argv[2]);
         int year = atoi(buf);//input the year we want to check
         if(year % 4 == 0 && year % 100 != 0)    //we learned from math that if a year remainder 4 equals 0 and that year remainder 100 don't equals 0 or the year remainder 400 equals 0, than the year must be a leap year
         {
