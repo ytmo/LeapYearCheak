@@ -1,6 +1,6 @@
 #  Leap Year Cheak
 
-[![npm license][license-image]][license-url]
+[![npm license][https://github.com/ytmo/LeapYearCheak/workflows/Release/badge.svg]][https://github.com/ytmo/LeapYearCheak/]
 
 ### Welcome to Leap Year Cheak!!! The Leap Year Cheak write by Toms Project has four versions now: C, C++, C for cammand and C++ for Command
 
