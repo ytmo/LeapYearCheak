@@ -28,6 +28,6 @@ jobs:
       with:
           files: |
             WindowsCMD.tar.gz
-          name: LeapYearCheak Release ${{ github.ref }}
+          name: LeapYearCheak for CMD Release ${{ github.ref }}
       env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
