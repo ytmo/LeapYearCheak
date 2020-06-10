@@ -28,9 +28,9 @@ jobs:
       with:
           files: |
             LinuxCMD.tar.gz
-          name: LeapYearCheak Release ${{ github.ref }}
+          name: LeapYearCheak for CMD Release ${{ github.ref }}
           body: |
-            ## THIS IS THE NEWEST VERSION OF LeapYearCheak!!!!!
+            ## THIS IS THE NEWEST VERSION OF LeapYearCheak for CMD!!!!!
             For linux: LeapYearCheakLinuxC LeapYearCheakLinuxCpp
             For windows: LeapYearCheak.C.exe LeapYearCheak.Cpp.exe
             For macos: LeapYearCheakMacC LeapYearCheakMacCpp
