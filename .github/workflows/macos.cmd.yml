@@ -8,7 +8,7 @@ jobs:
     steps:
     - name: COM Cpp files
       run: |
-        curl -O  https://raw.githubusercontent.com/ytmo/LeapYearCheak/cmd/Cpp/main.cpp;clang++ main.cpp -o lyc1 -Wc++11-extensions
+        curl -O  https://raw.githubusercontent.com/ytmo/LeapYearCheak/cmd/Cpp/main.cpp;clang++ main.cpp -o lyc1 -std=c++17
     - name: COM C files
       run: |
         curl -O  https://raw.githubusercontent.com/ytmo/LeapYearCheak/cmd/C/main.c;clang main.c -o lyc2
