@@ -1,6 +1,6 @@
-#  Leap Year Cheak
+#  Leap Year Cheak -- Version 2.0
 
-### Welcome to Leap Year Cheak!!! The Leap Year Cheak write by Toms Project has four versions now: C, C++, C for cammand and C++ for Command
+### Welcome to the future version of Leap Year Cheak!!! The future version of Leap Year Cheak write by Toms Project will have 10+ versions: C, C++, Python, Swift, Objective-C, Node.js, C#, Pascal, Java, PHP and Go
 ---
 ## Status
 | [Windows][win-link]| [Linux][Linux-link]|[MacOS][macos-link]|
