@@ -5,7 +5,6 @@
 //  Created by Toms Project on 2020/6/14.
 //  Copyright © 2020 Toms Project. All rights reserved.
 //
-
 import Foundation     //for print and input
 
 print("Please input a year, and I'll check is that a leap year!!!")
