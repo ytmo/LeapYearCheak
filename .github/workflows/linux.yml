@@ -1,4 +1,4 @@
-name: Linux build 
+name: Linux build for V 2.0
 on: [push,pull_request]
 
 jobs:
@@ -8,10 +8,15 @@ jobs:
     steps:
     - name: COM Cpp files
       run: |
-        wget https://raw.githubusercontent.com/ytmo/LeapYearCheak/master/Cpp/main.cpp;g++ main.cpp -o LeapYearCheakLinuxCpp
+        wget https://raw.githubusercontent.com/ytmo/LeapYearCheak/2.0/Cpp/main.cpp;g++ main.cpp -o LeapYearCheakLinuxCpp
     - name: COM C files
       run: |
-        wget https://raw.githubusercontent.com/ytmo/LeapYearCheak/master/C/main.c;gcc main.c -o LeapYearCheakLinuxC
+        wget https://raw.githubusercontent.com/ytmo/LeapYearCheak/2.0/C/main.c;gcc main.c -o LeapYearCheakLinuxC
+    - name: TEST Python files
+      run: |
+        wget https://raw.githubusercontent.com/ytmo/LeapYearCheak/2.0/Python/main.py
+        echo -e "1 \n" | python3 main.py
+        echo -e "2020 \n" | python3 main.py
     - name: Upload Release When Tag
       uses: softprops/action-gh-release@v1
       if: startsWith(github.ref, 'refs/tags/')
