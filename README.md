@@ -46,6 +46,12 @@ this version used C to achieve Leap Year Cheak, for more info, goto [C Version o
 ## C++ Version
 this version used C++ to achieve Leap Year Cheak, for more info, goto [C++ Version of Leap Year Cheak](./Cpp/)
 
+## Python Version
+this version used Python to achieve Leap Year Cheak, for more info, goto [Python Version of Leap Year Cheak](./Python/)
+
+## Swift Version
+this version used Swift to achieve Leap Year Cheak, for more info, goto [Swift Version of Leap Year Cheak](./Swift/)
+
 
 For more useful code, please visit:[Toms Project Official website](http://www.projectoms.com)
 If you found bugs or you have something to say, PLEASE send us a issues
