@@ -1,0 +1,33 @@
+        <!DOCTYPE html>
+        <html>
+        <body>
+        <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    	<meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1,initial-scale=1,user-scalable=no">
+		<title>Leap Year Cheak -- Version 2.0 for HTML5</title>
+        </head>
+        <h1>Please input a year, and I'll check is that a leap year!!!</h1>
+        <input placeholder="Input a year here" id="year">
+        <button onclick="sub()">Check</button>
+        <h2 id="result">Result</h2>
+        <script>
+        	function sub() {
+            	var year = document.getElementById("year").value;
+                //we learned from math that if a year remainder 4 equals 0 and that year remainder 100 don't equals 0 or the year remainder 400 equals 0, than the year must be a leap year
+                if(year % 4 == 0 && year % 100 != 0)    
+    			{
+        			document.getElementById("result").innerHTML = year + " is a leap year!";
+    			}
+    			else if (year % 400 == 0)
+    			{
+          			document.getElementById("result").innerHTML = year + " is a leap year!";
+    			}
+    			else
+    			{
+        			document.getElementById("result").innerHTML = year + " is not a leap year!";
+    			}
+            }
+        </script>
+        </body>
+        </html>
+    
