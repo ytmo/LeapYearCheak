@@ -14,7 +14,7 @@ jobs:
         wget https://raw.githubusercontent.com/ytmo/LeapYearCheak/2.0/C/main.c;gcc main.c -o LeapYearCheakLinuxC
     - name: COM Java files
       run: |
-        wget https://raw.githubusercontent.com/ytmo/LeapYearCheak/2.0/Java/main.java;javac main.java
+        wget https://raw.githubusercontent.com/ytmo/LeapYearCheak/2.0/Java/LeapYearCheak.java;javac LeapYearCheak.java
     - name: TEST Python files
       run: |
         wget https://raw.githubusercontent.com/ytmo/LeapYearCheak/2.0/Python/main.py
