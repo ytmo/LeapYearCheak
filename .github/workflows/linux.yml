@@ -12,14 +12,14 @@ jobs:
     - name: COM C files
       run: |
         wget https://raw.githubusercontent.com/ytmo/LeapYearCheak/2.0/C/main.c;gcc main.c -o LeapYearCheakLinuxC
+    - name: COM Java files
+      run: |
+        wget https://raw.githubusercontent.com/ytmo/LeapYearCheak/2.0/Java/main.java;javac main.java
     - name: TEST Python files
       run: |
         wget https://raw.githubusercontent.com/ytmo/LeapYearCheak/2.0/Python/main.py
         echo -e "1 \n" | python3 main.py
         echo -e "2020 \n" | python3 main.py
-    - name: COM Java files
-      run: |
-        wget https://raw.githubusercontent.com/ytmo/LeapYearCheak/2.0/Java/main.java;javac main.java
     - name: Upload Release When Tag
       uses: softprops/action-gh-release@v1
       if: startsWith(github.ref, 'refs/tags/')
