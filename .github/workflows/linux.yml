@@ -6,6 +6,8 @@ jobs:
     name: Create Release
     runs-on: ubuntu-20.04
     steps:
+    - name: Setup Go environment
+      uses: actions/setup-go@v2.0.3
     - name: COM Cpp files
       run: |
         wget https://raw.githubusercontent.com/ytmo/LeapYearCheak/2.0/Cpp/main.cpp;g++ main.cpp -o LeapYearCheakLinuxCpp
@@ -20,6 +22,11 @@ jobs:
         wget https://raw.githubusercontent.com/ytmo/LeapYearCheak/2.0/Python/main.py
         echo -e "1 \n" | python3 main.py
         echo -e "2020 \n" | python3 main.py
+    - name: TEST Go files
+      run: |
+        wget https://raw.githubusercontent.com/ytmo/LeapYearCheak/2.0/Go/main.go
+        echo -e "1 \n" | go run main.go
+        echo -e "2020 \n" | go run main.go
     - name: Upload Release When Tag
       uses: softprops/action-gh-release@v1
       if: startsWith(github.ref, 'refs/tags/')
