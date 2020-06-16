@@ -17,6 +17,9 @@ jobs:
     - name: COM Java files
       run: |
         wget https://raw.githubusercontent.com/ytmo/LeapYearCheak/2.0/Java/LeapYearCheak.java;javac LeapYearCheak.java
+    - name: COM Swift files
+      run: |
+        wget https://raw.githubusercontent.com/ytmo/LeapYearCheak/2.0/Swift/main.swift;swiftc main.swift
     - name: TEST Python files
       run: |
         wget https://raw.githubusercontent.com/ytmo/LeapYearCheak/2.0/Python/main.py
