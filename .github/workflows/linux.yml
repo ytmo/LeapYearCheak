@@ -23,7 +23,7 @@ jobs:
         wget https://raw.githubusercontent.com/ytmo/LeapYearCheak/2.0/Java/LeapYearCheak.java;javac LeapYearCheak.java
     - name: COM Swift files
       run: |
-        wget https://raw.githubusercontent.com/ytmo/LeapYearCheak/2.0/Swift/main.swift;./swift-5.2.4-RELEASE-ubuntu20.04/swiftc main.swift
+        wget https://raw.githubusercontent.com/ytmo/LeapYearCheak/2.0/Swift/main.swift;./swift-5.2.4-RELEASE-ubuntu20.04/usr/bin/swiftc main.swift
     - name: TEST Python files
       run: |
         wget https://raw.githubusercontent.com/ytmo/LeapYearCheak/2.0/Python/main.py
