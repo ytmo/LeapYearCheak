@@ -5,15 +5,12 @@ if (year % 4 == 0)
 then
 	if (year % 100 ~= 0)
     then
-    	--print(tostring(year) + " is a leap year!")
-        print(year)
-        print(" is a leap year!")
+    	print(tostring(year) .. " is a leap year!")
 	end
 elseif (year % 400 == 0)
 then
-    print(year)
-    print(" is a leap year!")
+    print(tostring(year) .. " is a leap year!")
 else
-    print(year)
-    print(" is not a leap year!")
+    print(tostring(year) .. " is not a leap year!")
 end
+    
