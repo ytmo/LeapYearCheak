@@ -12,6 +12,13 @@ jobs:
       run: |
         wget https://swift.org/builds/swift-5.2.4-release/ubuntu2004/swift-5.2.4-RELEASE/swift-5.2.4-RELEASE-ubuntu20.04.tar.gz
         tar -zxvf swift-5.2.4-RELEASE-ubuntu20.04.tar.gz
+    - name: Setup Lua environment
+      run: |
+        curl -R -O http://www.lua.org/ftp/lua-5.3.5.tar.gz
+        tar zxf lua-5.3.5.tar.gz
+        cd lua-5.3.5
+        make linux test
+        make install
     - name: COM Cpp files
       run: |
         wget https://raw.githubusercontent.com/ytmo/LeapYearCheak/2.0/Cpp/main.cpp;g++ main.cpp -o LeapYearCheakLinuxCpp
@@ -34,6 +41,16 @@ jobs:
         wget https://raw.githubusercontent.com/ytmo/LeapYearCheak/2.0/Go/main.go
         echo -e "1 \n" | go run main.go
         echo -e "2020 \n" | go run main.go
+    - name: TEST Perl files
+      run: |
+        wget https://raw.githubusercontent.com/ytmo/LeapYearCheak/2.0/Perl/main.pl
+        echo -e "1 \n" | perl main.pl
+        echo -e "2020 \n" | perl main.pl
+    - name: TEST Lua files
+      run: |
+        wget https://raw.githubusercontent.com/ytmo/LeapYearCheak/2.0/Lua/main.lua
+        echo -e "1 \n" | lua main.lua
+        echo -e "2020 \n" | lua main.lua
     - name: Upload Release When Tag
       uses: softprops/action-gh-release@v1
       if: startsWith(github.ref, 'refs/tags/')
