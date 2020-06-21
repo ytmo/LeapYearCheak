@@ -14,13 +14,12 @@ jobs:
         tar -zxvf swift-5.2.4-RELEASE-ubuntu20.04.tar.gz
     - name: Setup Lua environment
       run: |
-        sudo -i
-        apt install libreadline-dev
+        sudo apt install libreadline-dev
         curl -R -O http://www.lua.org/ftp/lua-5.3.5.tar.gz
         tar zxf lua-5.3.5.tar.gz
         cd lua-5.3.5
-        make linux test
-        make install
+        sudo make linux test
+        sudo make install
     - name: COM Cpp files
       run: |
         wget https://raw.githubusercontent.com/ytmo/LeapYearCheak/2.0/Cpp/main.cpp;g++ main.cpp -o LeapYearCheakLinuxCpp
