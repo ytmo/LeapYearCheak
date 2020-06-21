@@ -36,6 +36,8 @@ jobs:
     - name: COM C# files
       run: |
         wget https://raw.githubusercontent.com/ytmo/LeapYearCheak/2.0/CHash/main.cs;mcs main.cs
+        cp main.exe LeapYearCheakLinuxCHash.exe
+        rm main.exe
     - name: COM Java files
       run: |
         wget https://raw.githubusercontent.com/ytmo/LeapYearCheak/2.0/Java/LeapYearCheak.java;javac LeapYearCheak.java
