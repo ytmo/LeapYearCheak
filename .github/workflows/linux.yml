@@ -19,6 +19,9 @@ jobs:
       run: |
         wget https://swift.org/builds/swift-5.2.4-release/ubuntu2004/swift-5.2.4-RELEASE/swift-5.2.4-RELEASE-ubuntu20.04.tar.gz
         tar -zxvf swift-5.2.4-RELEASE-ubuntu20.04.tar.gz
+    - name: Setup Ruby environment
+      run: |
+        sudo apt-get install ruby-full
     - name: Setup Lua environment
       run: |
         sudo apt install libreadline-dev
@@ -64,6 +67,11 @@ jobs:
         wget https://raw.githubusercontent.com/ytmo/LeapYearCheak/2.0/Lua/main.lua
         echo -e "1 \n" | lua main.lua
         echo -e "2020 \n" | lua main.lua
+    - name: TEST Ruby files
+      run: |
+        wget https://raw.githubusercontent.com/ytmo/LeapYearCheak/2.0/Ruby/main.rb
+        echo -e "1 \n" | ruby main.rb
+        echo -e "2020 \n" | ruby main.rb
     - name: Upload Release When Tag
       uses: softprops/action-gh-release@v1
       if: startsWith(github.ref, 'refs/tags/')
