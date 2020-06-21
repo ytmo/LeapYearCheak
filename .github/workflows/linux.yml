@@ -8,6 +8,13 @@ jobs:
     steps:
     - name: Setup Go environment
       uses: actions/setup-go@v2.0.3
+    - name: Setup Mono environment
+      run: |
+        sudo apt install gnupg ca-certificates
+        sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
+        echo "deb https://download.mono-project.com/repo/ubuntu stable-focal main" | sudo tee /etc/apt/sources.list.d/mono-official-stable.list
+        sudo apt update
+        sudo apt install mono-devel mono-complete
     - name: Setup Swift environment
       run: |
         wget https://swift.org/builds/swift-5.2.4-release/ubuntu2004/swift-5.2.4-RELEASE/swift-5.2.4-RELEASE-ubuntu20.04.tar.gz
@@ -26,6 +33,9 @@ jobs:
     - name: COM C files
       run: |
         wget https://raw.githubusercontent.com/ytmo/LeapYearCheak/2.0/C/main.c;gcc main.c -o LeapYearCheakLinuxC
+    - name: COM C# files
+      run: |
+        wget https://raw.githubusercontent.com/ytmo/LeapYearCheak/2.0/CHash/main.cs;mcs main.cs
     - name: COM Java files
       run: |
         wget https://raw.githubusercontent.com/ytmo/LeapYearCheak/2.0/Java/LeapYearCheak.java;javac LeapYearCheak.java
