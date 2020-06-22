@@ -52,6 +52,38 @@ this version used Python to achieve Leap Year Cheak, for more info, goto [Python
 ## Swift Version
 this version used Swift to achieve Leap Year Cheak, for more info, goto [Swift Version of Leap Year Cheak](./Swift/)
 
+## Objective-C Version
+this version used Objective-C to achieve Leap Year Cheak, for more info, goto [Objective-C Version of Leap Year Cheak](./Objective-C/)
+
+## Node.js Version
+this version used Node.js to achieve Leap Year Cheak, for more info, goto [Node.js Version of Leap Year Cheak](./Node/)
+
+## C# Version
+this version used C# to achieve Leap Year Cheak, for more info, goto [C# Version of Leap Year Cheak](./CHash/)
+
+## Pascal Version
+this version used Pascal to achieve Leap Year Cheak, for more info, goto [Pascal Version of Leap Year Cheak](./Pascal/)
+
+## Java Version
+this version used Java to achieve Leap Year Cheak, for more info, goto [Java Version of Leap Year Cheak](./Java/)
+
+## PHP Version
+this version used PHP to achieve Leap Year Cheak, and you can run it by GET, for more info, goto [PHP Version of Leap Year Cheak](./PHP/)
+
+## Go Version
+this version used Go to achieve Leap Year Cheak, for more info, goto [Go Version of Leap Year Cheak](./Go/)
+
+## Ruby Version
+this version used Ruby to achieve Leap Year Cheak, for more info, goto [Ruby Version of Leap Year Cheak](./Ruby/)
+
+## [HTML5+CSS3+JavaScript] Version
+this version used [HTML5+CSS3+JavaScript] to achieve Leap Year Cheak, and you can run it in your chrome, edge, ie, firefox, etc. for more info, goto [[HTML5+CSS3+JavaScript] Version of Leap Year Cheak](./HTML5/)
+
+## Lua Version
+this version used Ruby to achieve Leap Year Cheak, for more info, goto [Lua Version of Leap Year Cheak](./Lua/)
+
+## Perl Version
+this version used Ruby to achieve Leap Year Cheak, for more info, goto [Perl Version of Leap Year Cheak](./Perl/)
 
 For more useful code, please visit:[Toms Project Official website](http://www.projectoms.com)
 If you found bugs or you have something to say, PLEASE send us a issues
