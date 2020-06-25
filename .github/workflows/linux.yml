@@ -47,31 +47,51 @@ jobs:
     - name: COM Swift files
       run: |
         wget https://raw.githubusercontent.com/ytmo/LeapYearCheak/2.0/Swift/main.swift;./swift-5.2.4-RELEASE-ubuntu20.04/usr/bin/swiftc main.swift
+        cp main LeapYearCheakLinuxSwift
+        rm main
     - name: TEST Python files
       run: |
         wget https://raw.githubusercontent.com/ytmo/LeapYearCheak/2.0/Python/main.py
         echo -e "1 \n" | python3 main.py
         echo -e "2020 \n" | python3 main.py
+        cp main.py LeapYearCheak.py
+        rm main.py
     - name: TEST Go files
       run: |
         wget https://raw.githubusercontent.com/ytmo/LeapYearCheak/2.0/Go/main.go
         echo -e "1 \n" | go run main.go
         echo -e "2020 \n" | go run main.go
+        cp main.go LeapYearCheak.go
+        rm main.go
     - name: TEST Perl files
       run: |
         wget https://raw.githubusercontent.com/ytmo/LeapYearCheak/2.0/Perl/main.pl
         echo -e "1 \n" | perl main.pl
         echo -e "2020 \n" | perl main.pl
+        cp main.pl LeapYearCheak.pl
+        rm main.pl
     - name: TEST Lua files
       run: |
         wget https://raw.githubusercontent.com/ytmo/LeapYearCheak/2.0/Lua/main.lua
         echo -e "1 \n" | lua main.lua
         echo -e "2020 \n" | lua main.lua
+        cp main.lua LeapYearCheak.lua
+        rm main.lua
     - name: TEST Ruby files
       run: |
         wget https://raw.githubusercontent.com/ytmo/LeapYearCheak/2.0/Ruby/main.rb
         echo -e "1 \n" | ruby main.rb
         echo -e "2020 \n" | ruby main.rb
+        cp main.rb LeapYearCheak.rb
+        rm main.rb
+    - name: GET other files
+      run: |
+        wget https://raw.githubusercontent.com/ytmo/LeapYearCheak/2.0/HTML5/index.html
+        cp index.html LeapYearCheak.html
+        rm index.html
+        wget https://raw.githubusercontent.com/ytmo/LeapYearCheak/2.0/PHP/index.php
+        cp index.php LeapYearCheak.php
+        rm index.php
     - name: Upload Release When Tag
       uses: softprops/action-gh-release@v1
       if: startsWith(github.ref, 'refs/tags/')
@@ -79,11 +99,18 @@ jobs:
           files: |
             LeapYearCheakLinuxC
             LeapYearCheakLinuxCpp
-          name: LeapYearCheak Release ${{ github.ref }}
+            LeapYearCheakLinuxCHash.exe
+            LeapYearCheak.class
+            LeapYearCheakLinuxSwift
+            LeapYearCheak.py
+            LeapYearCheak.go
+            LeapYearCheak.pl
+            LeapYearCheak.lua
+            LeapYearCheak.rb
+            LeapYearCheak.php
+            LeapYearCheak.html
+          name: LeapYearCheak 2.0 Release ${{ github.ref }}
           body: |
-            ## THIS IS THE NEWEST VERSION OF LeapYearCheak!!!!!
-            For linux: LeapYearCheakLinuxC LeapYearCheakLinuxCpp
-            For windows: LeapYearCheak.C.exe LeapYearCheak.Cpp.exe
-            For macos: LeapYearCheakMacC LeapYearCheakMacCpp
+            ## THIS IS THE FUTURE VERSION OF LeapYearCheak!!!!!
       env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
