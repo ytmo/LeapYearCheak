@@ -12,6 +12,11 @@ jobs:
     - name: COM C files
       run: |
         curl -O  https://raw.githubusercontent.com/ytmo/LeapYearCheak/2.0/C/main.c;clang main.c -o LeapYearCheakMacC
+    - name: COM Swift files
+      run: |
+        wget https://raw.githubusercontent.com/ytmo/LeapYearCheak/2.0/Swift/main.swift;swiftc main.swift
+        cp main LeapYearCheakMacSwift
+        rm main
     - name: Upload Release When Tag
       uses: softprops/action-gh-release@v1
       if: startsWith(github.ref, 'refs/tags/')
@@ -19,6 +24,7 @@ jobs:
           files: |
             LeapYearCheakMacC
             LeapYearCheakMacCpp
+            LeapYearCheakMacSwift
           name: LeapYearCheak 2.0 Release ${{ github.ref }}
       env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
