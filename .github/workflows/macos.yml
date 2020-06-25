@@ -8,10 +8,10 @@ jobs:
     steps:
     - name: COM Cpp files
       run: |
-        curl -O  https://raw.githubusercontent.com/ytmo/LeapYearCheak/master/Cpp/main.cpp;clang++ main.cpp -o LeapYearCheakMacCpp
+        curl -O  https://raw.githubusercontent.com/ytmo/LeapYearCheak/2.0/Cpp/main.cpp;clang++ main.cpp -o LeapYearCheakMacCpp
     - name: COM C files
       run: |
-        curl -O  https://raw.githubusercontent.com/ytmo/LeapYearCheak/master/C/main.c;clang main.c -o LeapYearCheakMacC
+        curl -O  https://raw.githubusercontent.com/ytmo/LeapYearCheak/2.0/C/main.c;clang main.c -o LeapYearCheakMacC
     - name: Upload Release When Tag
       uses: softprops/action-gh-release@v1
       if: startsWith(github.ref, 'refs/tags/')
@@ -19,6 +19,6 @@ jobs:
           files: |
             LeapYearCheakMacC
             LeapYearCheakMacCpp
-          name: LeapYearCheak Release ${{ github.ref }}
+          name: LeapYearCheak 2.0 Release ${{ github.ref }}
       env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
