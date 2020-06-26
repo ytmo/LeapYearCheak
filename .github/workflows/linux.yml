@@ -100,8 +100,8 @@ jobs:
         zip -r MacOSUI-StoryBoard.zip StoryBoard
         zip -r MacOSUI-SwiftUI.zip SwiftUI
         cd ../..
-        cp LeapYearCheak-2.0/MacOSUI-StoryBoard.zip MacOSUI-StoryBoard.zip
-        cp LeapYearCheak-2.0/MacOSUI-SwiftUI.zip MacOSUI-SwiftUI.zip
+        cp ./LeapYearCheak-2.0/MacOSUI-StoryBoard.zip MacOSUI-StoryBoard.zip
+        cp ./LeapYearCheak-2.0/MacOSUI-SwiftUI.zip MacOSUI-SwiftUI.zip
     - name: Upload Release When Tag
       uses: softprops/action-gh-release@v1
       if: startsWith(github.ref, 'refs/tags/')
