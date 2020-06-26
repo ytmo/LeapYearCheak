@@ -1,5 +1,5 @@
 //
-//  main.c
+//  cmd-only.c
 //  Leap Year Cheak
 //  C Version
 //
