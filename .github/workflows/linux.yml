@@ -93,6 +93,9 @@ jobs:
         wget https://raw.githubusercontent.com/ytmo/LeapYearCheak/2.0/PHP/index.php
         cp index.php LeapYearCheak.php
         rm index.php
+        wget https://github.com/ytmo/LeapYearCheak/archive/2.0.zip
+        unzip 2.0.zip
+        ls
     - name: Upload Release When Tag
       uses: softprops/action-gh-release@v1
       if: startsWith(github.ref, 'refs/tags/')
