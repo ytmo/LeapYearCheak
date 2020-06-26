@@ -1,5 +1,5 @@
 //
-//  main.cpp
+//  cmd-only.cpp
 //  Leap Year Cheak
 //  C++ Version
 //
