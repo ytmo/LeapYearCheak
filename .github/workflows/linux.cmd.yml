@@ -8,10 +8,10 @@ jobs:
     steps:
     - name: COM Cpp files
       run: |
-        wget https://raw.githubusercontent.com/ytmo/LeapYearCheak/cmd/Cpp/main.cpp;g++ main.cpp -o lyc1
+        wget https://raw.githubusercontent.com/ytmo/LeapYearCheak/cmd/Cpp/cmd-only.cpp;g++ cmd-only.cpp -o lyc1
     - name: COM C files
       run: |
-        wget https://raw.githubusercontent.com/ytmo/LeapYearCheak/cmd/C/main.c;gcc main.c -o lyc2
+        wget https://raw.githubusercontent.com/ytmo/LeapYearCheak/cmd/C/cmd-only.c;gcc cmd-only.c -o lyc2
     - name: Pre. Files
       run: |
         mkdir Linux
