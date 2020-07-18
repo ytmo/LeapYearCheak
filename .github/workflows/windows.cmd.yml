@@ -8,10 +8,10 @@ jobs:
     steps:
     - name: COM Cpp files
       run: |
-        curl -O  https://raw.githubusercontent.com/ytmo/LeapYearCheak/cmd/Cpp/main.cpp;g++ main.cpp -o lyc1.exe
+        curl -O  https://raw.githubusercontent.com/ytmo/LeapYearCheak/cmd/Cpp/cmd-only.cpp;g++ cmd-only.cpp -o lyc1.exe
     - name: COM C files
       run: |
-        curl -O  https://raw.githubusercontent.com/ytmo/LeapYearCheak/cmd/C/main.c;gcc main.c -o lyc2.exe
+        curl -O  https://raw.githubusercontent.com/ytmo/LeapYearCheak/cmd/C/cmd-only.c;gcc cmd-only.c -o lyc2.exe
     - name: Pre. Files
       run: |
         mkdir Windows
