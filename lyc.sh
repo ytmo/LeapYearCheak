@@ -8,26 +8,21 @@ fi
 if [ "${PM}" = "yum" ]; then
     yum -y install wget curl
 elif [ "${PM}" = "apt-get" ]; then
-		apt-get update
-    apt-get upgrade -y
     apt-get install -y wget curl
 fi
         
 wget -O cmd-only.cpp https://git.io/lyc-cmd.cpp
 
-if [ -f "/usr/bin/g++" ]; then
-    g++ cmd-only.cpp -o lyc
-else
-    if [ "${PM}" = "yum" ]; then
-        yum -y install gcc  
-        yum -y install gcc-c++ 
-		elif [ "${PM}" = "apt-get" ]; then
-		    apt-get update
-        apt-get upgrade -y
-        apt-get install -y ssh build-essential gcc g++ gdb clang cmake rsync tar automake
-    fi
-    g++ cmd-only.cpp -o lyc
+if [ "${PM}" = "yum" ]; then
+    yum -y install gcc  
+    yum -y install gcc-c++ 
+elif [ "${PM}" = "apt-get" ]; then
+    apt-get update
+    apt-get upgrade -y
+    apt-get install -y ssh build-essential gcc g++ gdb clang cmake rsync tar automake
 fi
+
+g++ cmd-only.cpp -o lyc
 
 sudo cp lyc /usr/bin/lyc
 rm lyc
