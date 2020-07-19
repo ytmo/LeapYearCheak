@@ -12,7 +12,7 @@ wget -O lyc.sh https://git.io/lyc.sh && sudo bash lyc.sh
 ```
 ##### MacOS
 ```bash
-curl -sSO http://git.io/lyc-mac.sh && sudo bash lyc-mac.sh
+curl -sSO https://git.io/lyc-mac.sh && sudo bash lyc-mac.sh
 ```
 
 ## Status
