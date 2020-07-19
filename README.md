@@ -1,5 +1,5 @@
 #  Leap Year Cheak  --  Command Version
-### Welcome to Leap Year Cheak Command Version!!! The Leap Year Cheak Command Version write by Toms Project has two versions now: C and C++
+### Welcome to Leap Year Cheak Command Version!!! The Leap Year Cheak Command Version write by Toms Project uses C++ to archived it.
 
 ## Install 
 ##### CentOS
@@ -9,6 +9,10 @@ yum install -y wget && wget -O lyc.sh https://git.io/lyc.sh && sh lyc.sh
 ##### Ubuntu/Debian
 ```bash
 wget -O lyc.sh https://git.io/lyc.sh && sudo bash lyc.sh
+```
+##### MacOS
+```bash
+curl -sSO http://git.io/lyc-mac.sh && sudo bash lyc-mac.sh
 ```
 
 ## Status
