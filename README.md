@@ -12,7 +12,7 @@ wget -O lyc.sh https://git.io/lyc.sh && sudo bash lyc.sh
 ```
 ##### MacOS
 ```bash
-curl -sSO https://git.io/lyc-mac.sh && sudo bash lyc-mac.sh
+curl -O https://ytmo.github.io/LeapYearCheak/lyc-mac.sh && sudo bash lyc-mac.sh
 ```
 
 ## Status
