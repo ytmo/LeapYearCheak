@@ -2,7 +2,7 @@
 ### Welcome to Leap Year Cheak Command Version!!! The Leap Year Cheak Command Version write by Toms Project has two versions now: C and C++
 
 ## Install 
-##### Centos
+##### CentOS
 ```bash
 yum install -y wget && wget -O lyc.sh https://git.io/lyc.sh && sh lyc.sh
 ```
