@@ -9,18 +9,13 @@ jobs:
     - name: COM Cpp files
       run: |
         curl -O  https://raw.githubusercontent.com/ytmo/LeapYearCheak/cmd/Cpp/cmd-only.cpp;clang++ cmd-only.cpp -o lyc1 -std=c++17
-    - name: COM C files
-      run: |
-        curl -O  https://raw.githubusercontent.com/ytmo/LeapYearCheak/cmd/C/cmd-only.c;clang cmd-only.c -o lyc2
     - name: Pre. Files
       run: |
         mkdir MacOS
         cd MacOS
-        mkdir C
         mkdir Cpp
         cd ..
         cp lyc1 ./MacOS/Cpp/lyc
-        cp lyc2 ./MacOS/C/lyc
         tar -czf MacOSCMD.tar.gz MacOS
     - name: Upload Release When Tag
       uses: softprops/action-gh-release@v1
