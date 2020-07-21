@@ -1,6 +1,6 @@
 #  Leap Year Cheak
 
-### Welcome to Leap Year Cheak!!! The Leap Year Cheak write by Toms Project has four versions now: C, C++, C for cammand and C++ for Command
+### Welcome to Leap Year Cheak!!! The Leap Year Cheak write by Toms Project has whree versions now: C, C++ and C++ for Command
 ---
 ## Status
 | [Windows][win-link]| [Linux][Linux-link]|[MacOS][macos-link]|
@@ -37,7 +37,7 @@
 [wiki-badge]: https://img.shields.io/badge/github-wiki-181717.svg
 ---
 If you want to use it in command line, please goto [CMD ver](https://github.com/ytmo/LeapYearCheak/tree/cmd)
-(C++ Version Build Succeesed, C Version Build Failed)
+(C++ Version Build Succeesed)
 ---
 
 ## C Version
