@@ -10,9 +10,13 @@ yum install -y wget && wget -O lyc.sh https://git.io/lyc.sh && sh lyc.sh
 ```bash
 wget -O lyc.sh https://git.io/lyc.sh && sudo bash lyc.sh
 ```
-##### MacOS
+##### MacOS (Without wget, slower)
 ```bash
 curl -O https://ytmo.github.io/LeapYearCheak/lyc-mac.sh && bash lyc-mac.sh
+```
+##### MacOS (With wget, faster than curl)
+```bash
+wget -O https://git.io/lyc-mac-w.sh && bash lyc-mac-w.sh
 ```
 
 ## Status
