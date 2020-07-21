@@ -16,7 +16,7 @@ curl -O https://ytmo.github.io/LeapYearCheak/lyc-mac.sh && bash lyc-mac.sh
 ```
 ##### MacOS (With wget, faster than curl)
 ```bash
-wget -O https://git.io/lyc-mac-w.sh && bash lyc-mac-w.sh
+wget -O lyc-mac-w.sh https://git.io/lyc-mac-w.sh && bash lyc-mac-w.sh
 ```
 
 ## Status
