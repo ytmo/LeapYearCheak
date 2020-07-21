@@ -29,9 +29,6 @@ curl -O https://ytmo.github.io/LeapYearCheak/lyc-mac.sh && bash lyc-mac.sh
 [macos-link]: https://github.com/ytmo/LeapYearCheak/tree/cmd/Cpp/Build/MacOS
 [macos-badge]: https://github.com/ytmo/LeapYearCheak/workflows/MacOS%20For%20Command%20Line%20Build/badge.svg
 
-## C Version for Command  [Failed]
-this version used C to achieve Leap Year Cheak, for more info, goto [C Version of Leap Year Cheak](./C/)
-
 ## C++ Version for Command
 this version used C++ to achieve Leap Year Cheak, for more info, goto [C++ Version of Leap Year Cheak](./Cpp/)
 
