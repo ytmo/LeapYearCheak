@@ -4,6 +4,7 @@
 //  C++ Version
 //
 //  Created by Toms Project on 2020/6/7.
+//  Last update by Toms Project on 2020/7/21
 //  Copyright © 2020 Toms Project. All rights reserved.
 //
 
@@ -11,7 +12,7 @@
 #include <string>
 //#include <cstdlib>                                 //for using SYSTEM
 
-constexpr auto VERSION = "Beta v2.0.0-1-cmd ";
+constexpr auto VERSION = "Beta v2.0.0-2-cmd ";
 
 using namespace std;                               //Using namespace as std
 
@@ -37,7 +38,7 @@ int main(int argc, const char * argv[])
     {
         cout << "LeapYearCheak(lyc) Version: "<<VERSION<<endl;
     }
-    else if (chose == "-s" || chose == "-suan" || chose == "--s" || chose == "--suan")
+    else if (chose == "-c" || chose == "-check" || chose == "--c" || chose == "--check")
     {
         sprintf(buf, "%s", argv[2]);
         auto year = atoll(buf);//input the year we want to check
