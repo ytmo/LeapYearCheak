@@ -28,6 +28,6 @@ jobs:
             ## THIS IS THE NEWEST VERSION OF LeapYearCheak for CMD!!!!!
             For Linux: LinuxCMD.tar.gz
             For Windows: WindowsCMD.tar.gz
-            For MacOS: Build Failed
+            For MacOS: MacOSCMD.tar.gz
       env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
