@@ -8,19 +8,14 @@ jobs:
     steps:
     - name: COM Cpp files
       run: |
-        wget https://raw.githubusercontent.com/ytmo/LeapYearCheak/cmd/Cpp/cmd-only.cpp;g++ cmd-only.cpp -o lyc1
-    - name: COM C files
-      run: |
-        wget https://raw.githubusercontent.com/ytmo/LeapYearCheak/cmd/C/cmd-only.c;gcc cmd-only.c -o lyc2
+        wget https://raw.githubusercontent.com/ytmo/LeapYearCheak/cmd/Cpp/cmd-only.cpp;g++ cmd-only.cpp -o lyc
     - name: Pre. Files
       run: |
         mkdir Linux
         cd Linux
-        mkdir C
         mkdir Cpp
         cd ..
-        cp lyc1 ./Linux/Cpp/lyc
-        cp lyc2 ./Linux/C/lyc
+        cp lyc ./Linux/Cpp/lyc
         tar -czf LinuxCMD.tar.gz Linux 
     - name: Upload Release When Tag
       uses: softprops/action-gh-release@v1
