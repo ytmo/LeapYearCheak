@@ -4,11 +4,7 @@ Source code: main.cpp
 
 Build Files:
 
-MacOS: LeapYearCheakMacCpp
-
-Windows: LeapYearCheak.Cpp.exe
-
-Linux: LeapYearCheakLinuxCpp
+See Release Tab
 
 If you have better code to slove this, welcome to tell us.
 
