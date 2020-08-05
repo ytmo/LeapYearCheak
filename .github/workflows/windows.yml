@@ -8,8 +8,7 @@ jobs:
     steps:
     - name: Setup Pascal Environment
       run: |
-        curl -O https://github.com/xprc/opentest/releases/download/v1.1.0/wget.exe
-        ./wget.exe https://github.com/xprc/opentest/releases/download/v3.2.0/FPC-win32-3.2.0-i386.rar
+        curl -O https://github.com/xprc/opentest/releases/download/v3.2.0/FPC-win32-3.2.0-i386.rar
         unrar FPC-win32-3.2.0-i386.rar
     - name: COM Cpp files
       run: |
