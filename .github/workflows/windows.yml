@@ -22,11 +22,11 @@ jobs:
       run: |
         cd FPC\3.2.0\bin\i386-win32
         wget https://raw.githubusercontent.com/ytmo/LeapYearCheak/2.0/Pascal/main.pas
-        cp main.pas LeapYearCheakLinuxPascal.pas
+        cp main.pas LeapYearCheak.Pascal.pas
         rm main.pas
-        ./fpc.exe LeapYearCheakLinuxPascal.pas
+        ./fpc.exe LeapYearCheak.Pascal.pas
         cd ..\..\..\..\
-        cp .\FPC\3.2.0\bin\i386-win32\LeapYearCheakLinuxPascal LeapYearCheakLinuxPascal
+        cp FPC\3.2.0\bin\i386-win32\LeapYearCheak.Pascal.exe LeapYearCheak.Pascal.exe
     - name: Upload Release When Tag
       uses: softprops/action-gh-release@v1
       if: startsWith(github.ref, 'refs/tags/')
@@ -34,6 +34,7 @@ jobs:
           files: |
             LeapYearCheak.C.exe
             LeapYearCheak.Cpp.exe
+            LeapYearCheak.Pascal.exe
           name: LeapYearCheak 2.0 Release ${{ github.ref }}
       env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
