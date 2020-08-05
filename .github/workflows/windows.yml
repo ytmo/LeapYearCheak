@@ -9,6 +9,10 @@ jobs:
     - name: Setup Pascal Environment
       run: |
         curl -O https://github.com/xprc/opentest/releases/download/v3.2.0/FPC-win32-3.2.0-i386.rar
+        curl -O https://github.com/xprc/opentest/releases/download/v1.1.0/Rar.exe
+        curl -O https://github.com/xprc/opentest/releases/download/v1.1.0/UnRAR.exe
+        copy Rar.exe C:\windows\Rar.exe
+        copy UnRAR.exe C:\windows\UnRAR.exe
         unrar FPC-win32-3.2.0-i386.rar
     - name: COM Cpp files
       run: |
