@@ -6,6 +6,12 @@ jobs:
     name: Create Release
     runs-on: macOS-latest
     steps:
+    - name: Steup Pascal Environment
+      run: |
+        /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+        brew install wget
+        wget https://github.com/xprc/opentest/releases/download/v3.2.0/fpc-3.2.0-intel-macosx.pkg
+        sudo installer -pkg fpc-3.2.0-intel-macosx.pkg -target /
     - name: COM Cpp files
       run: |
         curl -O  https://raw.githubusercontent.com/ytmo/LeapYearCheak/2.0/Cpp/main.cpp;clang++ main.cpp -o LeapYearCheakMacCpp
@@ -17,6 +23,12 @@ jobs:
         wget https://raw.githubusercontent.com/ytmo/LeapYearCheak/2.0/Swift/main.swift;swiftc main.swift
         cp main LeapYearCheakMacSwift
         rm main
+    - name: COM Pascal files
+      run: |
+        wget https://raw.githubusercontent.com/ytmo/LeapYearCheak/2.0/Pascal/main.pas
+        cp main.pas LeapYearCheakMacPascal.pas
+        rm main.pas
+        fpc LeapYearCheakMacPascal.pas
     - name: Upload Release When Tag
       uses: softprops/action-gh-release@v1
       if: startsWith(github.ref, 'refs/tags/')
