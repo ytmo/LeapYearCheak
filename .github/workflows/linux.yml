@@ -119,6 +119,7 @@ jobs:
             LeapYearCheakLinuxC
             LeapYearCheakLinuxCpp
             LeapYearCheakLinuxCHash.exe
+            LeapYearCheakLinuxPascal
             LeapYearCheak.class
             LeapYearCheakLinuxSwift
             LeapYearCheak.py
