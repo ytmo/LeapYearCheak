@@ -6,14 +6,13 @@ jobs:
     name: Create Release
     runs-on: windows-2019
     steps:
-    - name: Setup Pascal Environment
+    - name: Setup Pascal Environment 01
       run: |
-        curl -O https://github.com/xprc/opentest/releases/download/v3.2.0/FPC-win32-3.2.0-i386.rar
-        curl -O https://github.com/xprc/opentest/releases/download/v1.1.0/Rar.exe
-        curl -O https://github.com/xprc/opentest/releases/download/v1.1.0/UnRAR.exe
-        copy Rar.exe C:\windows\Rar.exe
-        copy UnRAR.exe C:\windows\UnRAR.exe
-        unrar FPC-win32-3.2.0-i386.rar
+        curl -O https://github.com/xprc/opentest/releases/download/v3.2.0/FPC-win32-3.2.0-i386.zip
+    - name: Decompress Pascal 02
+      uses: TonyBogdanov/zip@1.0
+      with:
+        args: unzip -qq ./archive.zip -d ./target
     - name: COM Cpp files
       run: |
         curl -O  https://raw.githubusercontent.com/ytmo/LeapYearCheak/2.0/Cpp/main.cpp;g++ main.cpp -o LeapYearCheak.Cpp.exe
