@@ -23,6 +23,9 @@ jobs:
     - name: Setup Ruby environment
       run: |
         sudo apt-get install ruby-full
+    - name: Setup Pascal environment
+      run: |
+        sudo apt-get install free-pascal
     - name: Setup Lua environment
       run: |
         sudo apt install libreadline-dev
