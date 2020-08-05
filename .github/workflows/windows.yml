@@ -24,7 +24,7 @@ jobs:
         wget https://raw.githubusercontent.com/ytmo/LeapYearCheak/2.0/Pascal/main.pas
         cp main.pas LeapYearCheakLinuxPascal.pas
         rm main.pas
-        fpc.exe LeapYearCheakLinuxPascal.pas
+        ./fpc.exe LeapYearCheakLinuxPascal.pas
         cd ..\..\..\..\
         cp FPC\3.2.0\bin\i386-win32\LeapYearCheakLinuxPascal LeapYearCheakLinuxPascal
     - name: Upload Release When Tag
