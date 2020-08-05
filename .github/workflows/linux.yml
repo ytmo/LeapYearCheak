@@ -87,6 +87,13 @@ jobs:
         echo -e "2020 \n" | lua main.lua
         cp main.lua LeapYearCheak.lua
         rm main.lua
+    - name: TEST Node.js files
+      run: |
+        wget https://raw.githubusercontent.com/ytmo/LeapYearCheak/2.0/Nodejs/index.js
+        echo -e "1 \n" | node index.js
+        echo -e "2020 \n" | node index.js
+        cp index.js LeapYearCheak.js
+        rm index.js
     - name: TEST Ruby files
       run: |
         wget https://raw.githubusercontent.com/ytmo/LeapYearCheak/2.0/Ruby/main.rb
@@ -125,6 +132,7 @@ jobs:
             LeapYearCheak.py
             LeapYearCheak.go
             LeapYearCheak.pl
+            LeapYearCheak.js
             LeapYearCheak.lua
             LeapYearCheak.rb
             LeapYearCheak.php
