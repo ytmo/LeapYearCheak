@@ -6,12 +6,25 @@ jobs:
     name: Create Release
     runs-on: windows-2019
     steps:
+    - name: Setup Pascal Environment
+      run: |
+        wget https://github.com/xprc/opentest/releases/download/v3.2.0/FPC-win32-3.2.0-i386.rar
+        unrar FPC-win32-3.2.0-i386.rar
     - name: COM Cpp files
       run: |
         curl -O  https://raw.githubusercontent.com/ytmo/LeapYearCheak/2.0/Cpp/main.cpp;g++ main.cpp -o LeapYearCheak.Cpp.exe
     - name: COM C files
       run: |
         curl -O  https://raw.githubusercontent.com/ytmo/LeapYearCheak/2.0/C/main.c;gcc main.c -o LeapYearCheak.C.exe
+    - name: COM Pascal files
+      run: |
+        cd FPC\3.2.0\bin\i386-win32
+        wget https://raw.githubusercontent.com/ytmo/LeapYearCheak/2.0/Pascal/main.pas
+        cp main.pas LeapYearCheakLinuxPascal.pas
+        rm main.pas
+        fpc LeapYearCheakLinuxPascal.pas
+        cd ..\..\..\..\
+        cp FPC\3.2.0\bin\i386-win32\LeapYearCheakLinuxPascal LeapYearCheakLinuxPascal
     - name: Upload Release When Tag
       uses: softprops/action-gh-release@v1
       if: startsWith(github.ref, 'refs/tags/')
