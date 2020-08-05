@@ -35,6 +35,7 @@ jobs:
             LeapYearCheakMacC
             LeapYearCheakMacCpp
             LeapYearCheakMacSwift
+            LeapYearCheakMacPascal
           name: LeapYearCheak 2.0 Release ${{ github.ref }}
       env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
