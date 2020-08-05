@@ -43,7 +43,8 @@ jobs:
     - name: COM Pascal files
       run: |
         wget https://raw.githubusercontent.com/ytmo/LeapYearCheak/2.0/Pascal/main.pas
-        cp main.pas LeapYearCheakLinuxPascal 
+        cp main.pas LeapYearCheakLinuxPascal.pas
+        rm main.pas
         fpc LeapYearCheakLinuxPascal.pas
     - name: COM C# files
       run: |
