@@ -42,7 +42,9 @@ jobs:
         wget https://raw.githubusercontent.com/ytmo/LeapYearCheak/2.0/C/main.c;gcc main.c -o LeapYearCheakLinuxC
     - name: COM Pascal files
       run: |
-        wget https://raw.githubusercontent.com/ytmo/LeapYearCheak/2.0/Pascal/main.pas;fpc main.pas
+        wget https://raw.githubusercontent.com/ytmo/LeapYearCheak/2.0/Pascal/main.pas
+        cp main.pas LeapYearCheakLinuxPascal 
+        fpc LeapYearCheakLinuxPascal.pas
     - name: COM C# files
       run: |
         wget https://raw.githubusercontent.com/ytmo/LeapYearCheak/2.0/CHash/main.cs;mcs main.cs
