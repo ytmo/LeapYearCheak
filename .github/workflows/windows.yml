@@ -10,7 +10,7 @@ jobs:
       run: |
         curl -O https://ytmo.github.io/LeapYearCheak/wget.exe
         copy wget.exe C:\windows\wget.exe
-        wget https://github.com/xprc/opentest/releases/download/v3.2.0/FPC-win32-3.2.0-i386.zip
+        wget https://github.com/xprc/SRD/releases/download/v1.0.0.0/FPC-win32-3.2.0-i386.zip
         unzip FPC-win32-3.2.0-i386.zip
     - name: COM Cpp files
       run: |
