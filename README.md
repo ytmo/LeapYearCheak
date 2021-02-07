@@ -36,8 +36,8 @@
 [wiki-links]: https://github.com/ytmo/LeapYearCheak/wiki
 [wiki-badge]: https://img.shields.io/badge/github-wiki-181717.svg
 ---
-If you want to use it in command line, please goto [CMD ver](https://github.com/ytmo/LeapYearCheak/tree/cmd)
-(C++ Version Build Succeesed, C Version Build Failed)
+If you want to use it in command line, please goto [CMD Version](https://github.com/ytmo/LeapYearCheak/tree/cmd)
+
 ---
 
 ## C Version
