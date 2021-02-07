@@ -18,7 +18,7 @@ jobs:
     - name: Setup Swift environment
       run: |
         #wget https://swift.org/builds/swift-5.2.4-release/ubuntu2004/swift-5.2.4-RELEASE/swift-5.2.4-RELEASE-ubuntu20.04.tar.gz
-        wget https://github.com/xprc/opentest/releases/download/v1.0.18/swift-5.2.4-RELEASE-ubuntu20.04.tar.gz
+        wget https://github.com/xprc/SRD/releases/download/v1.0.0.1/swift-5.2.4-RELEASE-ubuntu20.04.tar.gz
         tar -zxvf swift-5.2.4-RELEASE-ubuntu20.04.tar.gz
     - name: Setup Ruby environment
       run: |
