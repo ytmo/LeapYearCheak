@@ -9,7 +9,7 @@ jobs:
     - name: Steup Pascal Environment
       run: |
         wget https://github.com/xprc/SRD/releases/download/v1.0.0.0/fpc-3.2.0.intel-macosx.dmg
-        sudo installer -pkg fpc-3.2.0-intel-macosx.pkg 
+        sudo installer -pkg ./fpc-3.2.0-intel-macosx.pkg -target /
     - name: COM Cpp files
       run: |
         curl -O  https://raw.githubusercontent.com/ytmo/LeapYearCheak/2.0/Cpp/main.cpp;clang++ main.cpp -o LeapYearCheakMacCpp
