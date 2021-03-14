@@ -16,18 +16,18 @@ jobs:
         mkdir Cpp
         cd ..
         cp lyc ./Linux/Cpp/lyc
-        tar -czf LinuxCMD.tar.gz Linux 
+        tar -czf Linux-CMD.tar.gz Linux 
     - name: Upload Release When Tag
       uses: softprops/action-gh-release@v1
       if: startsWith(github.ref, 'refs/tags/')
       with:
           files: |
-            LinuxCMD.tar.gz
+            Linux-CMD.tar.gz
           name: LeapYearCheak for CMD Release ${{ github.ref }}
           body: |
             ## THIS IS THE NEWEST VERSION OF LeapYearCheak for CMD!!!!!
-            For Linux: LinuxCMD.tar.gz
-            For Windows: WindowsCMD.tar.gz
-            For MacOS: MacOSCMD.tar.gz
+            For Linux: Linux-CMD.tar.gz
+            For Windows: Windows-CMD.rar
+            For MacOS: macOS-CMD.zip
       env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
