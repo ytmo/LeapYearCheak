@@ -16,7 +16,7 @@ jobs:
         mkdir Cpp
         cd ..
         cp lyc1.exe ./Windows/Cpp/lyc.exe
-        makecab Windows Windows-CMD.zip
+        tar.exe -a -c -f Windows-CMD.zip Windows
     - name: Upload Release When Tag
       uses: softprops/action-gh-release@v1
       if: startsWith(github.ref, 'refs/tags/')
