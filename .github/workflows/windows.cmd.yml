@@ -16,13 +16,13 @@ jobs:
         mkdir Cpp
         cd ..
         cp lyc1.exe ./Windows/Cpp/lyc.exe
-        winrar a Windows-CMD.rar Windows
+        makecab Windows Windows-CMD.zip
     - name: Upload Release When Tag
       uses: softprops/action-gh-release@v1
       if: startsWith(github.ref, 'refs/tags/')
       with:
           files: |
-            Windows-CMD.rar
+            Windows-CMD.zip
           name: LeapYearCheak for CMD Release ${{ github.ref }}
       env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
