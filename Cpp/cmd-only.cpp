@@ -4,13 +4,12 @@
 //  C++ Version
 //
 //  Created by Toms Project on 2020/6/7.
-//  Last update by Toms Project on 2020/7/21
+//  Last update by Toms Project on 2021/3/14
 //  Copyright © 2020 Toms Project. All rights reserved.
 //
 
 #include <iostream>
 #include <string>
-//#include <cstdlib>                                 //for using SYSTEM
 
 constexpr auto VERSION = "Beta v2.0.0-2-cmd ";
 
@@ -25,13 +24,13 @@ int main(int argc, const char * argv[])
     if (chose == "-h" || chose == "-help" || chose == "--h" || chose == "--help")
     {
         cout << "Welcomde━(*｀∀´*)ノ亻!"<<endl;
-        cout << "This LeapYearCheak(lyc) is write by Toms Project!!"<<endl;
-        cout << "Thank to c++ STL lib for help to build this!!!" << endl;
+        cout << "This is the LeapYearCheak(lyc), a leap year checker written by Toms Project!!"<<endl;
+        cout << "Thank to C++'s Standard Template Library (STL), which provides tons of help to build this!!!" << endl;
         cout << "Version: "<<VERSION<<endl;
         cout << "Useage："<<endl;
-        cout << "lyc -h   See the help"<<endl;
-        cout << "lyc -v   See the version"<<endl;
-        cout << "lyc -c YEAR   Check if a year is or not a leap year"<<endl;
+        cout << "lyc -h                 See the help"<<endl;
+        cout << "lyc -v                 See the version"<<endl;
+        cout << "lyc -c [YEAR_NUMBER]   Check if a year is or not a leap year"<<endl;
         
     }
     else if (chose == "-v" || chose == "-version" || chose == "--v" || chose == "--version")
@@ -57,8 +56,7 @@ int main(int argc, const char * argv[])
     }
     else
     {
-        cerr << "Err!!!Please use 'lyc -h' to see how to use me right!!!" << endl;
+        cerr << "Err!!! Please use 'lyc -h' to see how to use me correctly!!!" << endl;
     }
-    //system("pause");                              //to see result clearly
     return 0;
 }
