@@ -8,10 +8,10 @@ jobs:
     steps:
     - name: COM Cpp files
       run: |
-        wget https://raw.githubusercontent.com/ytmo/LeapYearCheak/master/Cpp/main.cpp;g++ main.cpp -o LeapYearCheakLinuxCpp
+        wget https://raw.githubusercontent.com/ytmo/LeapYearCheak/main/Cpp/main.cpp;g++ main.cpp -o LeapYearCheakLinuxCpp
     - name: COM C files
       run: |
-        wget https://raw.githubusercontent.com/ytmo/LeapYearCheak/master/C/main.c;gcc main.c -o LeapYearCheakLinuxC
+        wget https://raw.githubusercontent.com/ytmo/LeapYearCheak/main/C/main.c;gcc main.c -o LeapYearCheakLinuxC
     - name: Upload Release When Tag
       uses: softprops/action-gh-release@v1
       if: startsWith(github.ref, 'refs/tags/')
