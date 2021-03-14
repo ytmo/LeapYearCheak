@@ -3,7 +3,7 @@
 ### Welcome to Leap Year Cheak!!! The Leap Year Cheak write by Toms Project has whree versions now: C, C++ and C++ for Command
 ---
 ## Status
-| [Windows][win-link]| [Linux][Linux-link]|[MacOS][macos-link]|
+| [Windows][win-link]| [Linux][Linux-link]|[macOS][macos-link]|
 |---------------|---------------|-----------------|
 | ![win-badge]  | ![linux-badge]      | ![macos-badge]   |
 
@@ -18,8 +18,8 @@
 [linux-link]: https://github.com/ytmo/LeapYearCheak/tree/master/Cpp/Build/Linux
 [linux-badge]: https://github.com/ytmo/LeapYearCheak/workflows/Linux%20build/badge.svg
 
-[macos-link]: https://github.com/ytmo/LeapYearCheak/tree/master/Cpp/Build/MacOS
-[macos-badge]: https://github.com/ytmo/LeapYearCheak/workflows/MacOS%20build/badge.svg
+[macos-link]: https://github.com/ytmo/LeapYearCheak/tree/master/Cpp/Build/macOS
+[macos-badge]: https://github.com/ytmo/LeapYearCheak/workflows/macOS%20build/badge.svg
 
 [release-link]: https://github.com/ytmo/LeapYearCheak/releases
 [release-badge]: https://img.shields.io/github/v/release/ytmo/LeapYearCheak.svg
