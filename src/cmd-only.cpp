@@ -11,7 +11,7 @@
 #include <iostream>
 #include <string>
 
-constexpr auto VERSION = "Beta v2.0.0-2-cmd ";
+constexpr auto VERSION = "Beta v2.0.0-3-cmd ";
 
 using namespace std;                               //Using namespace as std
 
