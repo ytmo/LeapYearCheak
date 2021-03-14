@@ -1,4 +1,4 @@
-name: MacOS For Command Line Build 
+name: macOS For Command Line Build 
 on: [push,pull_request]
 
 jobs:
