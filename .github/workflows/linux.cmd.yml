@@ -27,7 +27,7 @@ jobs:
           body: |
             ## THIS IS THE NEWEST VERSION OF LeapYearCheak for CMD!!!!!
             For Linux: Linux-CMD.tar.gz
-            For Windows: Windows-CMD.rar
+            For Windows: Windows-CMD.zip
             For MacOS: macOS-CMD.zip
       env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
