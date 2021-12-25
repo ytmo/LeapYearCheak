@@ -55,14 +55,8 @@ this version used Swift to achieve Leap Year Cheak, for more info, goto [Swift V
 ## Objective-C Version
 this version used Objective-C to achieve Leap Year Cheak, for more info, goto [Objective-C Version of Leap Year Cheak](./Objective-C/)
 
-## Node.js Version
-this version used Node.js to achieve Leap Year Cheak, for more info, goto [Node.js Version of Leap Year Cheak](./Node/)
-
 ## C# Version
 this version used C# to achieve Leap Year Cheak, for more info, goto [C# Version of Leap Year Cheak](./CHash/)
-
-## Pascal Version
-this version used Pascal to achieve Leap Year Cheak, for more info, goto [Pascal Version of Leap Year Cheak](./Pascal/)
 
 ## Java Version
 this version used Java to achieve Leap Year Cheak, for more info, goto [Java Version of Leap Year Cheak](./Java/)
