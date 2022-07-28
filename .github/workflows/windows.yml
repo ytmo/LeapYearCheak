@@ -18,15 +18,6 @@ jobs:
     - name: COM C files
       run: |
         curl -O  https://raw.githubusercontent.com/ytmo/LeapYearCheak/2.0/C/main.c;gcc main.c -o LeapYearCheak.C.exe
-    - name: COM Pascal files
-      run: |
-        cd FPC\3.2.0\bin\i386-win32
-        wget https://raw.githubusercontent.com/ytmo/LeapYearCheak/2.0/Pascal/main.pas
-        cp main.pas LeapYearCheak.Pascal.pas
-        rm main.pas
-        ./fpc.exe LeapYearCheak.Pascal.pas
-        cd ..\..\..\..\
-        cp FPC\3.2.0\bin\i386-win32\LeapYearCheak.Pascal.exe LeapYearCheak.Pascal.exe
     - name: Upload Release When Tag
       uses: softprops/action-gh-release@v1
       if: startsWith(github.ref, 'refs/tags/')
