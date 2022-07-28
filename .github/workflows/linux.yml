@@ -23,9 +23,6 @@ jobs:
     - name: Setup Ruby environment
       run: |
         sudo apt-get install ruby-full
-    - name: Setup Pascal environment
-      run: |
-        sudo apt-get install fp-compiler
     - name: Setup Lua environment
       run: |
         sudo apt install libreadline-dev
@@ -81,13 +78,6 @@ jobs:
         echo -e "2020 \n" | lua main.lua
         cp main.lua LeapYearCheak.lua
         rm main.lua
-    - name: TEST Node.js files
-      run: |
-        wget https://raw.githubusercontent.com/ytmo/LeapYearCheak/2.0/Nodejs/index.js
-        echo -e "1 \n" | node index.js
-        echo -e "2020 \n" | node index.js
-        cp index.js LeapYearCheak.js
-        rm index.js
     - name: TEST Ruby files
       run: |
         wget https://raw.githubusercontent.com/ytmo/LeapYearCheak/2.0/Ruby/main.rb
