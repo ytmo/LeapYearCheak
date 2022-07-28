@@ -4,14 +4,14 @@
 //  C++ Version
 //
 //  Created by Toms Project on 2020/6/7.
-//  Last update by Toms Project on 2021/3/14
+//  Last update by Toms Project on 2022/7/28
 //  Copyright © 2020 Toms Project. All rights reserved.
 //
 
 #include <iostream>
 #include <string>
 
-constexpr auto VERSION = "Beta v2.0.0-3-cmd ";
+constexpr auto VERSION = "v2.0.1-1-cmd ";
 
 using namespace std;                               //Using namespace as std
 
