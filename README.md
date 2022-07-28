@@ -1,4 +1,4 @@
-#  Leap Year Cheak -- Version 2.0
+#  Leap Year Cheak -- Version 2.0-GUI
 
 ### Welcome to the future version of Leap Year Cheak!!! The future version of Leap Year Cheak write by Toms Project will have 10+ versions: C, C++, Python, Swift, Objective-C, Node.js, C#, Pascal, Java, PHP, Go, Ruby, [HTML5+CSS3+JavaScript], Lua and Perl.
 ---
