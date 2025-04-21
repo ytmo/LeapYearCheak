@@ -26,7 +26,7 @@ jobs:
     - name: Setup Lua environment
       run: |
         sudo apt install libreadline-dev
-        curl -R -O http://www.lua.org/ftp/lua-5.3.5.tar.gz
+        curl -R -O https://www.lua.org/ftp/lua-5.3.5.tar.gz
         tar zxf lua-5.3.5.tar.gz
         cd lua-5.3.5
         sudo make linux test
