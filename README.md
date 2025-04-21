@@ -13,13 +13,13 @@
 |![license-badge] |![release-badge] | ![download-badge]|![issues-badge]|![wiki-badge]|
 
 [win-link]: https://github.com/ytmo/LeapYearCheak/tree/master/Cpp/Build/Windows
-[win-badge]: https://github.com/ytmo/LeapYearCheak/workflows/Windows%20build/badge.svg
+[win-badge]: https://github.com/ytmo/LeapYearCheak/actions/workflows/windows.yml/badge.svg
 
 [linux-link]: https://github.com/ytmo/LeapYearCheak/tree/master/Cpp/Build/Linux
-[linux-badge]: https://github.com/ytmo/LeapYearCheak/workflows/Linux%20build/badge.svg
+[linux-badge]: https://github.com/ytmo/LeapYearCheak/actions/workflows/linux.yml/badge.svg
 
 [macos-link]: https://github.com/ytmo/LeapYearCheak/tree/master/Cpp/Build/MacOS
-[macos-badge]: https://github.com/ytmo/LeapYearCheak/workflows/MacOS%20build/badge.svg
+[macos-badge]: https://github.com/ytmo/LeapYearCheak/actions/workflows/macos.yml/badge.svg
 
 [release-link]: https://github.com/ytmo/LeapYearCheak/releases
 [release-badge]: https://img.shields.io/github/v/release/ytmo/LeapYearCheak.svg
